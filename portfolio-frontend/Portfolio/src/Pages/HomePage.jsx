@@ -178,7 +178,7 @@ function HomePage() {
               <img
                 src="./Images/web dev.jpg"
                 alt="Professional working"
-                className="w-full h-[96] object-cover rounded-2xl shadow-xl mt-30 max-sm:-mt-1 max-sm:h-60 max-sm:w-80 max-sm:ml-3"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-xl mt-30 max-sm:-mt-1 max-sm:h-60 max-sm:w-80 max-sm:ml-3"
               />
             </div>
           </div>
@@ -188,7 +188,7 @@ function HomePage() {
 
 
 
-      <section id="work" className="mt-80 px-4 bg-white scroll-mt-20">
+      <section id="work" className="mt-80 px-4 bg-white scroll-mt-20 max-sm:mt-55">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-black inline-block border-b-4 border-[#2E71FE] pb-2 tracking-wider">
             Work
@@ -197,8 +197,8 @@ function HomePage() {
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Card 1 */}
-          <div data-aos="fade-up" className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-            <img src="./Images/ss1.png" className="w-full h-80 transition-transform duration-500 group-hover:scale-110" alt="Cozy" />
+          <div data-aos="fade-up" className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer max-sm:h-50 m">
+            <img src="./Images/ss1.png" className="w-full h-80 transition-transform duration-500 group-hover:scale-110 max-sm:h-full" alt="Cozy" />
             <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-6 text-center">
               <h3 className="text-2xl  mb-2 poppins">MediaMarkHub</h3>
               <p className="text-sm mb-4">A simple user friendly single page web application for a mediaMarkHub-startup . </p>
@@ -223,9 +223,9 @@ function HomePage() {
           </div>
 
           {/* Card 2 */}
-          <div data-aos="fade-up" className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-            <img src="./Images/gs1.jpeg" className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" alt="DSR" />
-            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-6 text-center">
+          <div data-aos="fade-up" className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer  max-sm:h-50 m">
+            <img src="./Images/gs1.jpeg" className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110  max-sm:h-full" alt="DSR" />
+            <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-6 text-center">
               <h3 className="text-2xl font-bold mb-2">Greenscape Solutions</h3>
               <p className="text-sm mb-4">A multi page web application for Land and gardenscaping startup</p>
               <button
@@ -249,8 +249,8 @@ function HomePage() {
 
         {/* THE MODAL - SINGLE LARGE IMAGE + ARROWS [web:237] */}
         {selectedProject && (
-          <div className="fixed inset-0 z-100 flex items-center justify-center bg-[#ffffff4a]  backdrop-blur-sm">
-            <div className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-hidden relative shadow-2xl">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#ffffff4a]  backdrop-blur-sm ">
+            <div className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-hidden relative shadow-2xl max-sm:p-3">
 
               {/* Close Button */}
               <button
@@ -285,7 +285,7 @@ function HomePage() {
               </div>
 
               {/* LARGE CENTRAL IMAGE [web:237] */}
-              <div className="flex items-center justify-center h-[150] md:h-[150]  ">
+              <div className="flex items-center justify-center h-[600px] md:h-[600px]  ">
                 <img
                   src={selectedProject.gallery[currentImageIndex]}
                   alt={`Screenshot ${currentImageIndex + 1}`}

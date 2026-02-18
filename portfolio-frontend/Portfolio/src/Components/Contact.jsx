@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center bg-white py-20 mt-30">
+    <section id="contact" className="min-h-screen flex items-center justify-center bg-white py-20 mt-30 max-sm:mt-2">
       <div className="w-full max-w-xl px-4">
         {/* Heading */}
         <h1 className="text-center playfair font-bold text-5xl text-black underline decoration-[#2E71FE] underline-offset-8 mb-12 max-sm:text-3xl" data-aos="fade-up">
@@ -59,11 +59,11 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Name"
               required
-              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm"
+              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm max-sm:h-10"
             />
             <label
               htmlFor="name"
-              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 
+              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400  max-sm:-mt-2 max-sm:text-sm max-sm:peer-focus:-top-0.5
                           peer-focus:-top-2.5 peer-focus:left-3 peer-focus:text-xs peer-focus:text-[#2E71FE] peer-focus:bg-white peer-focus:px-2 
                           ${formData.name ? '-top-2.5 left-3 text-xs text-[#2E71FE] bg-white px-2' : 'top-4 text-base'}`}
             >
@@ -80,11 +80,11 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Email"
               required
-              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm"
+              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm  max-sm:h-10"
             />
             <label
               htmlFor="email"
-              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 
+              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 max-sm:-mt-2 max-sm:text-sm max-sm:peer-focus:-top-0.5
                           peer-focus:-top-2.5 peer-focus:left-3 peer-focus:text-xs peer-focus:text-[#2E71FE] peer-focus:bg-white peer-focus:px-2 
                           ${formData.email ? '-top-2.5 left-3 text-xs text-[#2E71FE] bg-white px-2' : 'top-4 text-base'}`}
             >
@@ -101,11 +101,11 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Subject"
               required
-              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm"
+              className="peer h-14 w-full rounded-xl border border-gray-200 bg-white px-4 pt-2 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm  max-sm:h-10"
             />
             <label
               htmlFor="subject"
-              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 
+              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 max-sm:-mt-2 max-sm:text-sm max-sm:peer-focus:-top-0.5
                           peer-focus:-top-2.5 peer-focus:left-3 peer-focus:text-xs peer-focus:text-[#2E71FE] peer-focus:bg-white peer-focus:px-2 
                           ${formData.subject ? '-top-2.5 left-3 text-xs text-[#2E71FE] bg-white px-2' : 'top-4 text-base'}`}
             >
@@ -121,11 +121,11 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Message"
               required
-              className="peer min-h-16 w-full rounded-xl border border-gray-200 bg-white px-4 pt-4 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm"
+              className="peer min-h-16 w-full rounded-xl border border-gray-200 bg-white px-4 pt-4 text-gray-900 placeholder-transparent focus:border-[#2E71FE] focus:outline-none transition-all shadow-sm  max-sm:-h-5"
             />
             <label
               htmlFor="message"
-              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 
+              className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 max-sm:-mt-2 max-sm:text-sm max-sm:peer-focus:-top-0.5
                           peer-focus:-top-2.5 peer-focus:left-3 peer-focus:text-xs peer-focus:text-[#2E71FE] peer-focus:bg-white peer-focus:px-2 
                           ${formData.message ? '-top-2.5 left-3 text-xs text-[#2E71FE] bg-white px-2' : 'top-4 text-base'}`}
             >
@@ -136,7 +136,7 @@ const Contact = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="bg-[#2E71FE] text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-600 active:scale-95 transition-all duration-200 poppins"
+            className="bg-[#2E71FE] text-white poppins py-4 rounded-xl shadow-lg hover:bg-blue-600 active:scale-95 transition-all duration-200 poppins max-sm:h-10 max-sm:pt-3 max-sm:text-sm"
           >
             Submit Message
           </button>
